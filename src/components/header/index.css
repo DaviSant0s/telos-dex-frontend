@@ -107,3 +107,7 @@
 
     cursor: pointer;
 }
+
+.header-container .form-content .input-content-icon > input:focus{
+    outline: none;
+}
