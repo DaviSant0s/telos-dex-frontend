@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pokemonButtonContainer{
+    width: 104px;
+    height: 108px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: none;
+}
