@@ -5,11 +5,61 @@
 }
 
 .pokemonButtonContainer{
+    position: relative;
     width: 104px;
     height: 108px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: end;
 
     background: #FFFFFF;
     box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     border: none;
+
+    cursor: pointer;
 }
+
+.pokemonButtonContainer .id-pokemon{
+    position: absolute;
+    top: 0%;
+    left: 65%;
+
+    width: 20px;
+    height: 12px;
+
+    color: #666666;
+}
+
+.pokemonButtonContainer .shadow-button{
+    width: 104px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+
+    /* Grayscale/Background */
+
+    background: #EFEFEF;
+    border-radius: 7px;
+
+    padding-bottom: 3px;
+    color: #1D1D1D;
+}
+
+.pokemonButtonContainer > img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+
+    height: 72px;
+    width: 72px;
+
+
+}
+
