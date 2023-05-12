@@ -18,7 +18,7 @@ const style = {
     padding: '0px 4px 4px'
 };
 
-export default function ModalTypeSearch( {open, setOpen} ) {
+export default function ModalTypeSearch( {open, setOpen, setButtonCheched} ) {
 
   const handleClose = () => setOpen(false);
 
@@ -37,8 +37,31 @@ export default function ModalTypeSearch( {open, setOpen} ) {
                 <div className='title-modal'>Sort by:</div>
                 <form className='form-radio' action="#" method="post">
                     <fieldset>
-                        <div className='input-radio'><input type="radio" name='name' id='inumber' checked/><label htmlFor="inumber">Number</label></div>
-                        <div className='input-radio'><input type="radio" name='name' id='iname'/><label htmlFor="iname">Name</label></div>
+
+                        <div className='input-radio'>
+                          <input 
+                            type="radio" 
+                            name='name' 
+                            id='inumber'
+                            onChange={() => {
+                              setButtonCheched('#')
+                            }}
+                            defaultChecked
+                          />
+                          <label htmlFor="inumber">Number</label>
+                        </div>
+
+                        <div className='input-radio'>
+                          <input 
+                          type="radio" 
+                          name='name' 
+                          id='iname'
+                          onChange={() => {
+                            setButtonCheched('A')
+                          }}
+                        />
+                        <label htmlFor="iname">Name</label></div>
+
                     </fieldset>
                 </form>
             </div>

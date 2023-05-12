@@ -6,6 +6,7 @@ import ModalTypeSearch from '../modalTypeSearch';
 
 export default function Header() {
     const [open, setOpen] = useState(false);
+    const [buttonCheched, setButtonCheched] = useState('#');
 
   return (
     <div className='header-container'>
@@ -23,11 +24,11 @@ export default function Header() {
             </div>
 
             <button onClick={() => setOpen(true)}>
-                #
+            {buttonCheched}
             </button>
     
         </form>
-        <ModalTypeSearch open={open} setOpen={setOpen}/>
+        <ModalTypeSearch open={open} setOpen={setOpen} setButtonCheched={setButtonCheched}/>
     </div>
   )
 }
