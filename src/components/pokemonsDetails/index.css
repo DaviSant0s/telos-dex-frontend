@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.details-container{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 100vh; /* pode dar problemas de rolagem */
+    background: #74CB48;
+    position: relative;
+}
+
+.details-container .pokeball{
+    position: absolute;
+    left: 43%;
+    top: 1%;
+    opacity: 0.1    ;
+}
+
+.details-container .details-content{
+    width: 367px;
+    height: 412px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin-bottom: 4px;
+}
+
+.details-container .pokemon1-detail{
+    position: absolute;
+    top: 16.3%;
+    left: 50%;
+
+    transform: translate(-50%, -0%);
+    
+    width: 200px;
+    height: 200px;
+}

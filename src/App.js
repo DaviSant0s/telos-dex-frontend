@@ -1,12 +1,14 @@
 import './App.css';
 import Header from './components/header';
+import PokemonsDetails from './components/pokemonsDetails';
 import Home from './pages/home';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Home/>
+      <PokemonsDetails/>
+      {/* <Header/>
+      <Home/> */}
     </div>
   );
 }
