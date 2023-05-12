@@ -1,9 +1,12 @@
-import React from 'react'
+import { useState } from 'react'
 import image from './Pokeball.png'
 import SearchIcon from '@mui/icons-material/Search';
 import './index.css'
+import ModalTypeSearch from '../modalTypeSearch';
 
 export default function Header() {
+    const [open, setOpen] = useState(false);
+
   return (
     <div className='header-container'>
         
@@ -19,12 +22,12 @@ export default function Header() {
                 <input type='text' name='searchPokemon' id='iSearchPokemon' placeholder='Search'></input>
             </div>
 
-            <button>
+            <button onClick={() => setOpen(true)}>
                 #
             </button>
     
         </form>
-
+        <ModalTypeSearch open={open} setOpen={setOpen}/>
     </div>
   )
 }
