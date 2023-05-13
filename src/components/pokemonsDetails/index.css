@@ -47,4 +47,88 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 16px;
+}
+
+.details-container .details-content .type-pokemon .aboutPokemon{
+
+    width: 312px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+
+    text-align: center;
+    color: #74CB48;
+}
+
+.details-container .details-content .type-pokemon .especificationsPokemon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    width: 312px;
+    height: 48px;
+    background: white;
+}
+
+.details-container .details-content .type-pokemon .especificationsPokemon .especificatios{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.details-container .details-content .type-pokemon .especificationsPokemon .especificatios span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #666666;
+}
+
+.details-container .details-content .type-pokemon .especificationsPokemon > .weight{
+    border-right: 1px solid #E0E0E0;;
+}
+.details-container .details-content .type-pokemon .especificationsPokemon > .moves{
+    border-left: 1px solid #E0E0E0;;
+}
+
+.details-container .details-content .type-pokemon .especificationsPokemon .especificatios .measure{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.details-container .details-content .type-pokemon .especificationsPokemon .especificatios .measure-moves{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-container .details-content .type-pokemon .especificationsPokemon .especificatios .measure-moves > span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #1D1D1D;
 }
