@@ -36,7 +36,15 @@
     left: 50%;
 
     transform: translate(-50%, -0%);
-    
+
     width: 200px;
     height: 200px;
+}
+
+.details-container .details-content .type-pokemon{
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
